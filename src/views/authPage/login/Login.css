@@ -1,0 +1,10 @@
+.loginBtn {
+  position: absolute;
+  bottom: 5rem;
+  width: 90%;
+}
+.loginContainer {
+  position: absolute;
+  bottom: 15rem;
+  width: 90%;
+}

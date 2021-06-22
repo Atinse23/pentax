@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Shola",
+            "lastName": "Billy",
+            "email": "shola@semicolon.africa",
+            "phone": "08011112222",
+            "password": "password123"
+        },
+        {
+            "id": 2,
+            "firstName": "Sukanmi",
+            "lastName": "Titus",
+            "email": "titus@semicolon.africa",
+            "phone": "08033332222",
+            "password": "password123"
+        },
+        {
+            "id": 3,
+            "firstName": "Daniel",
+            "lastName": "Amaka",
+            "email": "amaka@semicolon.africa",
+            "phone": "08044445555",
+            "password": "password123"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+.postContainer {
+  border-radius: 6px;
+  margin-bottom: 20px;
+  contain: content;
+}
+.postCalender {
+  height: 6vh;
+  background-color: white;
+  position: relative;
+  top: 10px;
+  width: 50px;
+  left: 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 5px 5px 17px -2px #4c4c4c;
+  box-shadow: 5px 5px 17px -2px #4c4c4c;
+}
+.postContent {
+  height: 20vh;
+  background-color: rgb(255, 255, 255);
+}
+.postHeader {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+.postHeader img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 10px 10px;
+}
+.postUsername {
+  font-size: 12px;
+  font-weight: bold;
+  align-self: center;
+}

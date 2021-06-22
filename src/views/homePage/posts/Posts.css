@@ -1,0 +1,8 @@
+.postsContainer {
+  overflow-y: auto;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: -webkit-fill-available;
+}
