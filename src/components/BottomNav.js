@@ -38,7 +38,6 @@ const BottomNav = () => {
             <BottomNavigationAction value="hackathon" icon={<GamesRoundedIcon />} />
             <BottomNavigationAction value="profile" icon={<PersonRoundedIcon />} />
         </BottomNavigation>
-
     )
 }
 

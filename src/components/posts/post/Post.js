@@ -1,7 +1,10 @@
-import React from 'react'
+
+import React, { useEffect, useState, useContext } from 'react'
+
 import "./Post.css"
 
 const Post = ({ post }) => {
+
     const imgPostContainer = {
         height: '20vh',
         backgroundImage: `linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(${post.image})`,
@@ -12,10 +15,10 @@ const Post = ({ post }) => {
 
     return (
         <div className="postContainer">
-            <div className="postHeader">
+            {/* <div className="postHeader">
                 <img src={post.owner.picture} alt="postdisplay" />
                 <span className="postUsername">{post.owner.lastName}</span>
-            </div>
+            </div> */}
             <div style={imgPostContainer}>
                 <div className="postCalender">
 

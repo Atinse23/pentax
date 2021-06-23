@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
+import { GlobalContext } from '../../../context/GlobalState'
 import Post from '../../../components/posts/post/Post'
 import axios from 'axios';
 import './Posts.css'
 import PostButton from '../../../components/posts/createPost/CreatePostButton'
 const Posts = () => {
-    const [posts, setPosts] = useState([])
+    //const [posts, setPosts] = useState([])
 
+    const { updatePostsSuccessful } = useContext(GlobalContext)
+    const { posts } = useContext(GlobalContext)
     useEffect(() => {
         getPosts()
     }, [])
@@ -16,8 +19,8 @@ const Posts = () => {
     const getPosts = async () => {
         axios.get(`${BASE_URL}`, { headers: { 'app-id': APP_ID } })
             .then(({ data }) => {
-                setPosts(data.data)
-                console.log(data.data)
+                updatePostsSuccessful(data.data)
+
             })
             .catch(console.error)
 
